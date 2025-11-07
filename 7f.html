@@ -1,0 +1,56 @@
+<html>
+  <body>
+    <script>
+      var d = new Date();
+
+     
+      document.write("toString: " + d.toString() + "<br><br>");
+
+      
+      document.write("getFullYear: " + d.getFullYear() + "<br>");
+      document.write("getMonth (0-11): " + d.getMonth() + "<br>");
+      document.write("getDate (day of month): " + d.getDate() + "<br>");
+      document.write("getDay (0=Sunday): " + d.getDay() + "<br><br>");
+
+     
+      document.write("getHours: " + d.getHours() + "<br>");
+      document.write("getMinutes: " + d.getMinutes() + "<br>");
+      document.write("getSeconds: " + d.getSeconds() + "<br>");
+      document.write("getMilliseconds: " + d.getMilliseconds() + "<br><br>");
+
+      
+      document.write("getTime (ms since Jan 1, 1970): " + d.getTime() + "<br>");
+      document.write("Date.now(): " + Date.now() + "<br><br>");
+
+      
+      document.write("getUTCFullYear: " + d.getUTCFullYear() + "<br>");
+      document.write("getUTCMonth: " + d.getUTCMonth() + "<br>");
+      document.write("getUTCDate: " + d.getUTCDate() + "<br>");
+      document.write("getUTCDay: " + d.getUTCDay() + "<br>");
+      document.write("getUTCHours: " + d.getUTCHours() + "<br><br>");
+
+      
+      document.write("toDateString: " + d.toDateString() + "<br>");
+      document.write("toTimeString: " + d.toTimeString() + "<br>");
+      document.write("toUTCString: " + d.toUTCString() + "<br>");
+      document.write("toISOString: " + d.toISOString() + "<br>");
+      document.write("toLocaleDateString: " + d.toLocaleDateString() + "<br>");
+      document.write("toLocaleTimeString: " + d.toLocaleTimeString() + "<br>");
+      document.write("toLocaleString: " + d.toLocaleString() + "<br><br>");
+
+      
+      d.setFullYear(2030);
+      document.write("After setFullYear(2030): " + d + "<br>");
+      d.setMonth(11); 
+      document.write("After setMonth(11): " + d + "<br>");
+      d.setDate(25);
+      document.write("After setDate(25): " + d + "<br>");
+      d.setHours(10);
+      document.write("After setHours(10): " + d + "<br>");
+      d.setMinutes(30);
+      document.write("After setMinutes(30): " + d + "<br>");
+      d.setSeconds(45);
+      document.write("After setSeconds(45): " + d + "<br>");
+    </script>
+  </body>
+</html>

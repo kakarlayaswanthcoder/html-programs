@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <script>
+      let regex = /hello/gi;
+      var str = "Hello hello world";
+
+      
+      document.write("global: " + regex.global + "<br>");
+      document.write("ignoreCase: " + regex.ignoreCase + "<br>");
+      document.write("multiline: " + regex.multiline + "<br>");
+      document.write("source: " + regex.source + "<br><br>");
+
+      
+      document.write("test('Hello hello'): " + regex.test(str) + "<br>");
+      document.write("exec('Hello hello'): " + regex.exec(str) + "<br><br>");
+
+      
+      document.write("match: " + str.match(regex) + "<br>");
+      document.write("search: " + str.search(regex) + "<br>");
+      document.write("replace: " + str.replace(regex, 'hi') + "<br>");
+      document.write("split: " + str.split(regex) + "<br>");
+    </script>
+  </body>
+</html>
